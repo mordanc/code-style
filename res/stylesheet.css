@@ -95,7 +95,7 @@ nav .dropdown:hover .chevron-spin {
 
 @media only screen and (max-width: 600px) {
   body {
-    font-size: 18px !important;
+    font-size: 150%;
   }
   img {
     display: none;
