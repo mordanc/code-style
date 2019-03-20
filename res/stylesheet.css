@@ -118,6 +118,7 @@ nav .dropdown:hover .chevron-spin {
   }
   .flex-parent-col {
     justify-content: left;
+    flex-grow: 1;
   }
 
   #main {
