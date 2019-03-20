@@ -98,14 +98,19 @@ nav .dropdown:hover .chevron-spin {
   }
   nav ul {
     margin: 5px;
+    padding: 2px;
+  }
+  nav ul li {
+    font-size: 70%;
+    border-bottom: 1px solid white;
+    margin: 1px;
+    text-align: center;
   }
   
   iframe {
     height: 25%;
   }
-  nav .dropdown-languages {
-    margin-left: 5%;
-  }
+ 
   nav .dropdown:hover .dropdown-languages {
     display: none;
   }
@@ -126,5 +131,6 @@ nav .dropdown:hover .chevron-spin {
   }
   #article-header {
     margin-top: 30vh;
+    margin-left: 5px;
   }
 }
