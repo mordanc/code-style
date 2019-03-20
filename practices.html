@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>CodeStyle</title>
+        <meta charset="utf-8">
+        <link href="res/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+
+<body>
+    <div class="flex-parent-col">
+        <nav>
+            <ul class="flex-parent-row">
+                <li class="flex-child"><a href="./index.html">Home</a></li>
+                <div class="dropdown">
+                    <li class="flex-child"><a href="./practices.html">Practices</a></li>
+                </div>
+                <div class="dropdown">
+                    <li class="flex-child"><a href="./languages.html">Languages <i
+                                class="fas fa-chevron-right chevron-spin"></i></a></li>
+                    <div class="dropdown-languages">
+                        <a class="flex-child" href="./languages.html#article-header">Python</a>
+                        <a class="flex-child" href="./languages.html#Java">Java</a>
+                        <a class="flex-child" href="./languages.html#JavaScript">JavaScript</a>
+                        <a class="flex-child" href="./languages.html#HTML">HTML</a>
+                    </div>
+                </div>
+                <li class="flex-child"><a href="./styling.html">Styling</a></li>
+                <li class="flex-child"><a href="./conventions.html">Conventions</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div id="article-header">
+            <h1 class=>Practices</h1>
+            <!-- <img id="header-img" src="res/images/close-up-code-coding-374563.jpg"> -->
+        </div>
+        <article id="main">
+            <h1>Universal Coding Practices</h1>
+            <p>
+                Many languages have styling/organizational practices specific to them, sometimes created by an expert
+                in that language, sometimes created and silently followed by the community that uses it.
+            </p>
+            <blockquote class="codeblock">
+                <div class="codeblock-code">
+                    <p>Python's PEP 8 standard is an example of a language whose creator made styling rules.</p>
+                </div>
+            </blockquote>
+            <p>
+                Whichever of these is true for the language that you are using, you should seek out guides for how to
+                best
+                format your code in whatever languages you are using. Outside of that however, there are still some
+                universal
+                rules that you can follow:
+            </p>
+            <ol>
+                <li>
+                    <h3>Be consistent with your spacing</h3>
+
+
+                    <p>
+                        Everyone has a preference for either spaces or tabs. Regardless of which one you steadfastly
+                        refuse to accept, keep it consistent in your code. Switching between the two on a whim can
+                        lead to malformed code and weird spacing issues.
+                    </p>
+                </li>
+
+                <li>
+                    <h3>Comment Thoroughly</h3>
+                    <p>
+                        Regardless of how ashamed you feel about every line of JS that you write, be sure to include
+                        comments wherever something could be unclear. Sure, this helps developers that come after
+                        you,
+                        but it also benefits you when you need to work on source code that you haven't touched in a
+                        while.
+                    </p>
+                </li>
+                <li>
+                    <h3>Keep you names consistent</h3>
+                    <p>
+                        It's tempting to name your classes/functions/variables on the fly, but when you try to reference
+                        them
+                        later you might regret it. It's important to stick to a naming structure across your project -
+                        if you started out camel-casing variable names and capitalizing class names, make sure to keep
+                        that
+                        consistent throughout. Doing this provides people accessing your API with a sense of how your
+                        code
+                        functions and makes it easier to get familiar with.
+                    </p>
+                    <blockquote class="codeblock">
+                        <div class="codeblock-code">
+                            <p>Any languages specific conventions for naming your classes/variables should
+                                supercede personal preference.
+                            </p>
+                        </div>
+                    </blockquote>
+                </li>
+            </ol>
+
+            <iframe width="100%" height="420" src="https://www.youtube.com/embed/0j74jcxSunY">
+            </iframe>
+        </article>
+    </div>
+
+</body>
+
+</html>

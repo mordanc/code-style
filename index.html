@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>CodeStyle</title>
+        <meta charset="utf-8">
+        <link href="res/stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+
+<body>
+    <div class="flex-parent-col">
+        <nav>
+            <ul class="flex-parent-row">
+                <li class="flex-child"><a href="./index.html">Home</a></li>
+                <div class="dropdown">
+                    <li class="flex-child"><a href="./practices.html">Practices</a></li>
+                </div>
+                <div class="dropdown">
+                    <li class="flex-child"><a href="./languages.html">Languages <i
+                                class="fas fa-chevron-right chevron-spin"></i></a></li>
+                    <div class="dropdown-languages">
+                        <a class="flex-child" href="./languages.html#article-header">Python</a>
+                        <a class="flex-child" href="./languages.html#Java">Java</a>
+                        <a class="flex-child" href="./languages.html#JavaScript">JavaScript</a>
+                        <a class="flex-child" href="./languages.html#HTML">HTML</a>
+                    </div>
+                </div>
+                <li class="flex-child"><a href="./styling.html">Styling</a></li>
+                <li class="flex-child"><a href="./conventions.html">Conventions</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div id="article-header">
+            <h1 class=>CodeStyle</h1>
+            <img id="header-img" src="res/images/bg.jpg">
+        </div>
+        <article id="main">
+            <h1>What is Code Styling?</h1>
+            <p>
+                This site is dedicated to showcasing some common and useful styling conventions for clean,
+                readable code. Following these conventions ensures that others can read your code without
+                having call you to translate for them.
+            </p>
+            <h1>Why Style Your Code?</h1>
+            <p>
+                Styling is especially useful in situations where you are contributing to projects with multiple members,
+                and want to keep a consistent layout throughout your codebase. This prevents your projects from looking
+                like they were frankenstein'd together by multiple contributors, which makes it easier for future
+                contributors
+                or even you at a later date.
+            </p>
+            <p>
+                For Example:
+            </p>
+            <blockquote class="codeblock">
+                <div class="codeblock-code">
+                    <code>
+                        &#60html&#62&#60body&#62&#60div&#62&#60h1&#62My Header&#60/h1&#62&#60p&#62My paragraph text, really important&#60/p&#62&#60/body&#62&#60/html&#62
+                    </code>
+                </div>
+            </blockquote>
+            <p>
+                This may look fine to an HTML interpreter but to a human, it's obviously extremely difficult to read.  The reason most websites'
+                source code doesn't look like this (unless they're trying to obfuscate data) is because their developers followed common
+                practices for making their code look readable.
+            </p>
+            <p>
+                This is a bit more readable:
+            </p>
+            <blockquote class="codeblock">
+                <div class="codeblock-code">
+                    <code>
+                        &#60html&#62<br>
+                        &nbsp;&#60body&#62<br>
+                        &nbsp;&nbsp;&nbsp;&#60h1&#62My Headers&#60/h1&#62<br>
+                        &nbsp;&nbsp;&nbsp;&#60p&#62<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;My paragraph text, really important<br>
+                        &nbsp;&nbsp;&nbsp;&#60/p&#62<br>
+                        &nbsp;&#60/body&#62<br>
+                        &#60/html&#62
+                    </code>
+                </div>
+            </blockquote>
+        </article>
+</div>
+
+</body>
+
+</html>
