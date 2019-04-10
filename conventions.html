@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>CodeStyle :: Conventions</title>
-        <meta charset="utf-8">
-        <meta id="viewport" name="viewport" content ="width=device-width" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-            <link href="res/stylesheet.css" rel="stylesheet">
-    </head>
+<head>
+    <title>CodeStyle :: Conventions</title>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="res/stylesheet.css" rel="stylesheet">
+</head>
 
 <body>
     <div class="flex-parent-col">
         <nav>
             <ul class="flex-parent-row">
                 <li class="flex-child"><a href="./index.html">Home</a></li>
-                <div class="dropdown">
-                    <li class="flex-child"><a href="./practices.html">Practices</a></li>
-                </div>
-                <div class="dropdown">
-                    <li class="flex-child"><a href="./languages.html">Languages <i
-                                class="fas fa-chevron-right chevron-spin"></i></a></li>
-                    <div class="dropdown-languages">
-                        <a class="flex-child" href="./languages.html#article-header">Python</a>
-                        <a class="flex-child" href="./languages.html#Java">Java</a>
-                        <a class="flex-child" href="./languages.html#JavaScript">JavaScript</a>
-                        <a class="flex-child" href="./languages.html#HTML">HTML</a>
-                    </div>
-                </div>
+                <li class="dropdown">
+                <li class="flex-child"><a href="./practices.html">Practices</a></li>
+
+                <li class="dropdown">
+                <li class="flex-child"><a href="./languages.html">Languages <i
+                            class="fas fa-chevron-right chevron-spin"></i></a></li>
+                <li class="dropdown-languages">
+                    <a class="flex-child" href="./languages.html#article-header">Python</a>
+                    <a class="flex-child" href="./languages.html#Java">Java</a>
+                    <a class="flex-child" href="./languages.html#JavaScript">JavaScript</a>
+                    <a class="flex-child" href="./languages.html#HTML">HTML</a>
+                </li>
                 <li class="flex-child"><a href="./styling.html">Styling</a></li>
                 <li class="flex-child"><a class="active" href="./conventions.html">Conventions</a></li>
-                <li classs="flex-child"><a href="./about.html">About Me</a></li>
+                <li class="flex-child"><a href="./about.html">About Me</a></li>
             </ul>
         </nav>
 
 
 
         <div id="article-header">
-            <h1 class=>CodeStyle</h1>
+            <h1>CodeStyle</h1>
         </div>
         <article id="main">
-            <h1>Common Coding Conventions</h1>
+            <h1>Coding Conventions</h1>
             <p>
-                While every programmer has their own preferences when it comes to how their code should look, there are some conventions
-                that are universally recognizable.
+                While every programmer has their own preferences when it comes to how their code should look, there are
+                some dogmatic conventions
+                that should sometimes take precedent over individual style - I would define these conventions
+                as collections of styles and practices specific to a situation. Often these conventions are specific to
+                a company, language,
+                or codebase. As such I don't have many recommendations for those kinds of conventions to follow, but
+                there are great books
+                about different kinds of conventions that can be found on Amazon.
+            </p>
+            <p>
+                While I can't touch on specific coding conventions, I can outline some elements of what I would call a
+                universal convention.
+                These are things that I believe to be constant across a lot of programming practices, styles and the
+                like - and these are just some
+                that I've picked up on, there are bound to be more.
             </p>
             <h1>Constants</h1>
             <p>
                 Constants are variables whose values will not change over the course of a program's lifecycle, and
-                should generally be declared in a file separate from the main functionality of your program. Most programmers will be able to
-                recognize a variable as a constant if it is fully capitalized, for example: <code><i>MY_CONSTANT</i></code>.
+                should generally be declared in a file separate from the main functionality of your program. Most
+                programmers will be able to
+                recognize a variable as a constant if it is fully capitalized, for example:
+                <code><i>MY_CONSTANT</i></code>.
             </p>
-            
+            <h1>Semicolons</h1>
+            <p>
+                Most object-oriented programming languages require the use of semicolons to indicate the end of a
+                statement, and so many programmers
+                recognize this as their purpose. Even in languages such as JavaScript, where semicolons aren't
+                necessary, I've found that many
+                people and websites still recommend their use to improve readability. So, I would say that if you are
+                able to use semicolons in a
+                language, do it.
+            </p>
         </article>
-</div>
+    </div>
 
 </body>
 
