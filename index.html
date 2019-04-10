@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>CodeStyle</title>
-        <meta charset="utf-8">
-        <meta id="viewport" name="viewport" content ="width=device-width" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-            <link href="res/stylesheet.css" rel="stylesheet">
-    </head>
+<head>
+    <title>CodeStyle</title>
+    <meta charset="utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="res/stylesheet.css" rel="stylesheet">
 
-<body>
+    <script type="text/javascript">
+        let text = ['c','o','d','e','_','s','t','y','l','e'];
+        let position = 0;
+
+        function typeText() {
+            if (position < text.length) {
+                document.getElementById('typed-text').innerHTML += text[position];
+                position++;
+            
+                setTimeout(typeText, 100);
+            }
+        }
+    </script>
+</head>
+
+<body onload="typeText();">
     <div class="flex-parent-col">
         <nav>
             <ul class="flex-parent-row">
@@ -30,14 +44,15 @@
                 </div>
                 <li class="flex-child"><a href="./styling.html">Styling</a></li>
                 <li class="flex-child"><a href="./conventions.html">Conventions</a></li>
-                <!-- <li classs="flex-child" style="margin-left: 40vw;"><a href="./about.html">About</a></li> -->
+                <li classs="flex-child"><a href="./about.html">About Me</a></li>
             </ul>
-            <a href="./about.html">About</a>
         </nav>
+
+
 
         <div id="hero">
             <div id="hero-text">
-                <h1>Code_Styling</h1>
+                <h1 id="typed-text"></h1>
             </div>
         </div>
 
@@ -73,8 +88,10 @@
                 </div>
             </blockquote>
             <p>
-                This may look fine to an HTML interpreter but to a human, it's obviously extremely difficult to read.  The reason most websites'
-                source code doesn't look like this (unless they're trying to obfuscate data) is because their developers followed common
+                This may look fine to an HTML interpreter but to a human, it's obviously extremely difficult to read.
+                The reason most websites'
+                source code doesn't look like this (unless they're trying to obfuscate data) is because their developers
+                followed common
                 practices for making their code look readable.
             </p>
             <p>
@@ -95,7 +112,7 @@
                 </div>
             </blockquote>
         </article>
-</div>
+    </div>
 
 </body>
 

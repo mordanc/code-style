@@ -6,7 +6,8 @@ nav {
   margin: 0;
   background-color: #36393f;
   position: fixed;
-  
+  z-index: 1;
+
   min-width: 100%;
 }
 nav ul {
@@ -71,7 +72,7 @@ nav .dropdown:hover .chevron-spin {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  margin-top: 0vh;
+  margin-top: 10vh;
   text-align: center;
 }
 #article-header-homepage {
@@ -99,13 +100,13 @@ nav .dropdown:hover .chevron-spin {
   font-size: 2em;
 
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  left: 35%;
 }
 #main {
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 10vh; */
+  margin-bottom: 10vh;
   padding: 0px 8px;
 
   width: 40%;
